@@ -280,7 +280,7 @@ class ElFinder extends Widget
     /**
      * {@inheritDoc}
      */
-    public function init()
+    public function init(): void
     {
         if (!isset($this->options['id'])) {
             $this->options['id'] = $this->getId();
