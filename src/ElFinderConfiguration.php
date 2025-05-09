@@ -211,7 +211,7 @@ class ElFinderConfiguration extends BaseObject implements Arrayable
      * @var integer|string Maximum upload file size. This size is per files. Can be set as number or string with unit
      * 10M, 500K, 1G. Note: elFinder 2.1+ support chunked file uploading. 0 means unlimited upload.
      */
-    public string|int $uploadMaxSize = 0;
+    public $uploadMaxSize = 0;
 
     /**
      * @var integer Maximum number of connection of chunked file uploading. -1 to disable chunked file upload.
@@ -270,7 +270,7 @@ class ElFinderConfiguration extends BaseObject implements Arrayable
      * children folders, -1 every folder will be check asynchronously, false all folders will be marked as having
      * subfolders
      */
-    public int|bool $checkSubfolders = true;
+    public $checkSubfolders = true;
 
     /**
      * @var string Directory separator. Required by client to show correct file paths
