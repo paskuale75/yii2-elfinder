@@ -41,45 +41,45 @@ class ElFinder extends Widget
     /**
      * @var string|array Connector URL. This is the only required option. Can be absolute or relative
      */
-    public string|array $url = '';
+    public $url = '';
     /**
      * @var string Base URL of elFinder library starting from Manager HTML
      */
-    public string $baseUrl = '';
+    public $baseUrl = '';
     /**
      * @var string The interface lang to use. Can currently be one of the following: ar, bg, ca, cs, de, en, es, fr, hu,
      * jp, nl, pl, pt_BR, ru, zh_CN. You will also need to include corresponding language file from js/i18n directory.
      */
-    public string $lang;
+    public $lang;
     /**
      * @var array Data to append to all requests and to upload files. These can be any extra data that must be passed to
      * the connector script. For example, you could use these to pass authentication information.
      */
-    public array $customData;
+    public $customData;
     /**
      * @var string Additional css class for filemanager node. This will be applied to the main filemanager container.
      */
-    public string $cssClass;
+    public $cssClass;
     /**
      * @var boolean|array Auto load required CSS (elfinder.min.css and theme.css).
      *
      * false to disable this function or CSS URL Array to load additional CSS files
      */
-    public array|bool $cssAutoLoad = false;
+    public cssAutoLoad = false;
     /**
      * @var boolean Remeber last opened dir to open it after reload or in next session. This is stored in browser cookie.
      */
-    public bool $rememberLastDir;
+    public $rememberLastDir;
     /**
      * @var boolean Clear historys(elFinder) on reload(not browser) function. Historys was cleared on Reload function on
      * elFinder 2.0. (value is true)
      */
-    public bool $reloadClearHistory;
+    public $reloadClearHistory;
     /**
      * @var boolean Use browser native history by hash-change with supported browsers. This option give URI hash that
      * holder position hash of elFinder.
      */
-    public bool $useBrowserHistory;
+    public $useBrowserHistory;
     /**
      * @var array Display only certain files based on their mime type.
      */
@@ -87,7 +87,7 @@ class ElFinder extends Widget
     /**
      * @var boolean|string|\yii\web\JsExpression Used to validate file names. By default, no empty names or '..' allowed.
      */
-    public string|bool|\yii\web\JsExpression $validName;
+    public $validName;
     /**
      * @var string Hash of default directory path to open.
      *
@@ -124,7 +124,7 @@ class ElFinder extends Widget
     /**
      * @var string|integer The width of the elFinder main interface.
      */
-    public string|int $width;
+    public $width;
     /**
      * @var integer The height of the elFinder main interface (in pixels).
      */
@@ -207,7 +207,7 @@ class ElFinder extends Widget
     /**
      * @var string|boolean Allow to drag and drop to upload files.
      */
-    public string|bool $dragUploadAllow;
+    public $dragUploadAllow;
     /**
      * @var boolean Allow shortcuts
      */
@@ -257,7 +257,7 @@ class ElFinder extends Widget
     /**
      * @var array|boolean Debug config
      */
-    public array|bool $debug;
+    public $debug;
     /**
      * @var integer Increase the size of individual chunks.
      */
