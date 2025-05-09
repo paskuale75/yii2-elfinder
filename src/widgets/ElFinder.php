@@ -65,7 +65,7 @@ class ElFinder extends Widget
      *
      * false to disable this function or CSS URL Array to load additional CSS files
      */
-    public cssAutoLoad = false;
+    public $cssAutoLoad = false;
     /**
      * @var boolean Remeber last opened dir to open it after reload or in next session. This is stored in browser cookie.
      */
