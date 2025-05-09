@@ -44,7 +44,7 @@ class Module extends \simialbi\yii2\base\Module
      * @var array|string the url to to the elfinder proxy. Will be set automatically if not set
      * (works only if root module).
      */
-    public string|array $proxyUrl = [];
+    public $proxyUrl = [];
 
     /**
      * @var array the main options of elfinder per instance.
