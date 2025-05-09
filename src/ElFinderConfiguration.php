@@ -242,7 +242,8 @@ class ElFinderConfiguration extends BaseObject implements Arrayable
     /**
      * @var mixed Data that will be passed to access control method
      */
-    public mixed $accessControlData = null;
+    /** @var mixed */
+    public $accessControlData = null;
 
     /**
      * @var array List of commands disabled on this root
