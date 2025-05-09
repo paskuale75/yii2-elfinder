@@ -373,17 +373,17 @@ class ElFinder extends Component
     /**
      * @var array|ElFinderOptions the main options of elfinder
      */
-    public array|ElFinderOptions $options = [];
+    public $options = [];
 
     /**
      * @var ElFinderConfiguration[] Array of arrays with per root settings. This is the only required option.
      */
-    public array $roots = [];
+    public $roots = [];
 
     /**
      * @var \elFinder api instance
      */
-    protected \elFinder $_elfinder;
+    protected $_elfinder;
 
     /**
      * @inheritdoc
