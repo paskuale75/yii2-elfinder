@@ -30,7 +30,7 @@ class ProxyController extends Controller
      * @return mixed
      * @throws NotFoundHttpException
      */
-    public function actionIndex(string $baseUrl, string $path): mixed
+    public function actionIndex(string $baseUrl, string $path)
     {
         $curl = curl_init();
         $url = str_replace(' ', '%20', sprintf(
@@ -75,7 +75,7 @@ class ProxyController extends Controller
      * @param string $response
      * @return array
      */
-    protected function parseCurlResponse($curl, string $response): array
+    protected function parseCurlResponse($curl, string $response)
     {
         $headers = [];
         $headerText = substr($response, 0, strpos($response, "\r\n\r\n"));
